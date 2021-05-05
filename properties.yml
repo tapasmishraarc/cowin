@@ -1,6 +1,6 @@
 APP_NAME: 'test'
 MS_NAME: 'webapp'
-BRANCH: 'master'
+BRANCH: 'main'
 GIT_SOURCE_URL: 'https://github.com/tapasmishraarc/cowin.git'
 GIT_CREDENTIALS: 'SCR_CRED'
 SONAR_HOST_URL: 'https://github.com/tapasmishraarc/sample-nodejs.git'
