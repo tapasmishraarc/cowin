@@ -1,5 +1,5 @@
-APP_NAME: 'test'
-MS_NAME: 'webapp'
+APP_NAME: 'cowin'
+MS_NAME: 'cowin'
 BRANCH: 'main'
 GIT_SOURCE_URL: 'https://github.com/tapasmishraarc/cowin.git'
 GIT_CREDENTIALS: 'SCR_CRED'
