@@ -23,12 +23,15 @@ namespace HttpClientDemo
                 string address = i.ToString() + "-05-2021";
                 result(address);
                 if (i == 29)
+                {
+                     if (sendMail)
+                     {
+                            SendMail(body);
+                     }
                     i = DateTime.Now.Day;
+                }
             }
-            if (sendMail)
-            {
-                SendMail(body);
-            }
+           
             Console.WriteLine("Done!");
             Console.ReadLine();
         }
