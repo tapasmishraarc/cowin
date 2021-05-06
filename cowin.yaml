@@ -1,0 +1,16 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: cowin
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: cowin
+    spec:
+      containers:
+      - name: cowin
+        image: admcoeacr.azurecr.io/cowin:latest
+        ports:
+        - containerPort: 80
