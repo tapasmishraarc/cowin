@@ -17,3 +17,5 @@ spec:
         image: admcoeacr.azurecr.io/cowin:latest
         ports:
         - containerPort: 80
+      imagePullSecrets:  
+        - name: quotesregistrykey  
