@@ -18,7 +18,7 @@ namespace HttpClientDemo
         public static bool sendMail = false;
         static void Main(string[] args)
         {
-            for (int i = DateTime.Now.Day; i < 10; i++)
+            for (int i = DateTime.Now.Day; i < 30; i++)
             {
                 string address = i.ToString() + "-05-2021";
                 result(address);
