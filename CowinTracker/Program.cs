@@ -68,7 +68,7 @@ namespace HttpClientDemo
                     foreach (Session session in root.sessions)
                     {
                         
-                        if (session.min_age_limit == 18)
+                        if (session.min_age_limit == 45)
                         {
 
                             body = body + "\n"+session.address;
