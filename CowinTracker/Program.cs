@@ -20,6 +20,7 @@ namespace HttpClientDemo
         {
             for (int i = DateTime.Now.Day; i < 30; i++)
             {
+                Console.WriteLine(i.ToString());
                 string address = i.ToString() + "-05-2021";
                 result(address);
                 if (i == 29)
