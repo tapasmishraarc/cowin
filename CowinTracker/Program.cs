@@ -18,17 +18,20 @@ namespace HttpClientDemo
         public static bool sendMail = false;
         static void Main(string[] args)
         {
-            for (int i = DateTime.Now.Day; i < 10; i++)
+            for (int i = DateTime.Now.Day; i < 30;i++)
             {
                 string address = i.ToString() + "-05-2021";
                 result(address);
                 if (i == 29)
+                {
                     i = DateTime.Now.Day;
+                    if (sendMail)
+                    {
+                        SendMail(body);
+                    }
+                }
             }
-            if (sendMail)
-            {
-                SendMail(body);
-            }
+           
             Console.WriteLine("Done!");
             Console.ReadLine();
         }
@@ -68,13 +71,14 @@ namespace HttpClientDemo
                     foreach (Session session in root.sessions)
                     {
                         
-                        if (session.min_age_limit == 18)
+                        if (session.min_age_limit == 45)
                         {
 
                             body = body + "\n"+session.address;
 
                             sendMail = true;
                             Console.WriteLine(session.address);
+                            Console.WriteLine(session.pincode);
 
 
                         }
